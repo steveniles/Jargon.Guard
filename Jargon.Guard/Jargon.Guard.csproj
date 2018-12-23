@@ -12,5 +12,7 @@
     <RepositoryUrl>https://github.com/steveniles/Jargon.Guard</RepositoryUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/steveniles/Jargon.Guard/master/license.txt</PackageLicenseUrl>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Jargon.Guard.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 </Project>
