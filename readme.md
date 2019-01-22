@@ -1,4 +1,7 @@
 # Jargon Guard
+[![nuget](https://img.shields.io/nuget/v/Jargon.Guard.svg)](https://www.nuget.org/packages/Jargon.Guard/)
+[![release](https://img.shields.io/github/release-date/steveniles/Jargon.Guard.svg)](https://github.com/steveniles/Jargon.Guard/releases)
+[![license](https://img.shields.io/github/license/steveniles/Jargon.Guard.svg)](https://github.com/steveniles/Jargon.Guard/blob/master/license.txt)
 
 Instread of writing
 ```csharp
