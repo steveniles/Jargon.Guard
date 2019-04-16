@@ -10,7 +10,7 @@
     <Copyright>Copyright (c) 2018 Steve Niles</Copyright>
     <PackageProjectUrl>https://github.com/steveniles/Jargon.Guard</PackageProjectUrl>
     <RepositoryUrl>https://github.com/steveniles/Jargon.Guard</RepositoryUrl>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/steveniles/Jargon.Guard/master/license.txt</PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Jargon.Guard.snk</AssemblyOriginatorKeyFile>
