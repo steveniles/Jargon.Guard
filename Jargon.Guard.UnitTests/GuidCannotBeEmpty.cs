@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Jargon.Guard.UnitTests
 {
-    public class Guid_CannotBeEmpty
+    public class GuidCannotBeEmpty
     {
         [Fact]
         public void ReturnsSameGuid()

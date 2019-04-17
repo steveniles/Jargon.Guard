@@ -1,35 +1,35 @@
-﻿using System;
+using System;
 using Xunit;
 
 namespace Jargon.Guard.UnitTests
 {
-    public class String_CannotBeEmpty
+    public class CollectionCannotBeEmpty
     {
         [Fact]
-        public void ReturnsSameString()
+        public void ReturnsSameCollection()
         {
-            string thing = "thing";
+            object[] thing = { null };
             Assert.Same(thing, thing.CannotBeEmpty());
         }
 
         [Fact]
         public void DoesNotThrowWhenNull()
         {
-            string thing = null;
+            object[] thing = null;
             thing.CannotBeEmpty();
         }
 
         [Fact]
         public void ThrowsWhenEmpty()
         {
-            string thing = string.Empty;
+            object[] thing = Array.Empty<object>();
             Assert.Throws<ArgumentException>(() => thing.CannotBeEmpty());
         }
 
         [Fact]
         public void SetsExceptionParameterName()
         {
-            string thing = string.Empty;
+            object[] thing = Array.Empty<object>();
             Assert.Throws<ArgumentException>(null, () => thing.CannotBeEmpty());
             Assert.Throws<ArgumentException>("thing", () => thing.CannotBeEmpty("thing"));
         }
@@ -37,9 +37,9 @@ namespace Jargon.Guard.UnitTests
         [Fact]
         public void SetsExceptionMessage()
         {
-            string thing = string.Empty;
-            Assert.Equal("String cannot be empty.", Assert.Throws<ArgumentException>(() => thing.CannotBeEmpty()).Message);
-            Assert.Equal("String cannot be empty.\r\nParameter name: thing", Assert.Throws<ArgumentException>(() => thing.CannotBeEmpty("thing")).Message);
+            object[] thing = Array.Empty<object>();
+            Assert.Equal("Collection cannot be empty.", Assert.Throws<ArgumentException>(() => thing.CannotBeEmpty()).Message);
+            Assert.Equal("Collection cannot be empty.\r\nParameter name: thing", Assert.Throws<ArgumentException>(() => thing.CannotBeEmpty("thing")).Message);
             Assert.Equal("Error!", Assert.Throws<ArgumentException>(() => thing.CannotBeEmpty(errorMessage: "Error!")).Message);
             Assert.Equal("Error!\r\nParameter name: thing", Assert.Throws<ArgumentException>(() => thing.CannotBeEmpty("thing", "Error!")).Message);
         }

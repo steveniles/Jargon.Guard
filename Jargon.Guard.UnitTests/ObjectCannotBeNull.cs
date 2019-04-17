@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Jargon.Guard.UnitTests
 {
-    public class Object_CannotBeNull
+    public class ObjectCannotBeNull
     {
         [Fact]
         public void ReturnsSameObject()

@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Jargon.Guard.UnitTests
 {
-    public class String_CannotBeBlank
+    public class StringCannotBeBlank
     {
         [Fact]
         public void ReturnsSameString()
